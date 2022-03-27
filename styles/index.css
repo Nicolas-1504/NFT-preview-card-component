@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('/styles/variables.css');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    align-items: center;
+    background-color: var(--veryDarkBlueMainBG);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.card{
+    align-items: center;
+    background-color: var(--veryDarkBlueCardBG);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 32rem;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+
+.card .container-img{
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    height: 270px;
+    position: relative;
+    width: 270px;
+}
+
+.container-img:hover .hover-img{
+    opacity: 0.5;
+}
+
+.container-img:hover .view{
+    opacity: 1;
+}
+
+.card .image-equlibrum{
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+}
+
+.hover-img{
+    background-color: var(--cyan);
+    border-radius: 8px;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.view{
+    left: 40%;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.title{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.title:hover{
+    color: var(--cyan);
+}
+
+.text-description{
+    color: var(--white);
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.detail-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail{
+    display: flex;
+    margin-right: 70px;
+}
+
+.text-detail{
+    color: var(--cyan);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.detail1{
+    display: flex;
+}
+
+.text-detail1{
+    color: var(--white);
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.creator-detail{
+    align-items: center;
+    border-top: solid 1px var(--veryDarkBlueLine);
+    display: flex;
+    padding-top: 20px;
+}
+
+.image-creator{
+    border-radius: 80px;
+    border: 1px var(--white) solid;
+    margin-right: 15px;
+    width: 24px;
+}
+
+.text-creator{
+    color: var(--white);
+    margin-right: 50px;
+}
+
+.span-creator{
+    opacity: 0.5;
+}
+
+.span1-creator{
+    cursor: pointer;
+}
+
+.span1-creator:hover{
+    color: var(--cyan);
+}
